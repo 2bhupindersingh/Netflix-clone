@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: rgba(0, 0, 0, 0.10);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9b9b9b;
+    -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.card-container {
+display: flex;
+padding: 0 20px;
+overflow-x: auto;
+
+}
+.card {
+    width: 16%;
+    flex: 0 0 16%;
+    padding: 15px 15px 0 ;
+    .card-poster {
+        max-height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
+    }
+    h5 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    h6 {
+    font-weight: 500;
+    font-size: 13px;
+    }
+}
+h3 {
+    &.title {
+        font-size: 25px;
+        padding: 15px 0 0 15px;
+        text-transform: capitalize;
+    }
+}
+.genres {
+    display: flex;
+    padding: 20px;
+    overflow: auto;
+    margin-bottom: 20px;
+    .columns {
+        background: #202020;
+        padding: 8px 18px;
+        color: #fff;
+        margin-right: 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+}

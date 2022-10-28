@@ -1,0 +1,27 @@
+.header {
+    padding:10px 20px;
+    background: #202020;
+    .netflix-logo {
+        max-width: 100px;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu {
+        margin-left: auto;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding:10px 20px;
+            color: #FFF;
+            font-size: 14px;
+        }
+    }
+}
